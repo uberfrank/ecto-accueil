@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Location pour les résidents · ECTO</title>
+  <meta name="description" content="Conditions selon lesquelles les résidents d'ECTO peuvent louer une salle à tarif réduit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="ECTO — accueil"><img src="assets/logo-ecto.jpg" alt="ECTO — Espace de travail coopératif" width="145" height="34"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="guide-accueil.html">Guide de l'accueil</a></li>
+          <li><a href="credits-benevolat.html">Crédits bénévolat</a></li>
+          <li><a href="devenir-membre.html">Devenir membre</a></li>
+          <li><a href="location-residents.html" aria-current="page">Location résidents</a></li>
+          <li><a href="evenements-communautaires.html">Événements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<header class="page-head wrap">
+  <p class="eyebrow">Politique</p>
+  <h1>Politique de location pour les résidents</h1>
+  <p class="lead">Les conditions selon lesquelles les résidents d'ECTO peuvent louer une salle de la coopérative à tarif réduit.</p>
+  <div class="meta"><span class="badge">Ébauche</span><span class="badge neutral">6 novembre 2026</span></div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sur cette page">
+    <p>Sur cette page</p>
+    <ol>
+      <li><a href="#objet">Objet</a></li>
+      <li><a href="#resident">Qui est résident</a></li>
+      <li><a href="#tarif">Tarif résident</a></li>
+      <li><a href="#frais">Frais connexes</a></li>
+      <li><a href="#paiement">Paiement des frais</a></li>
+    </ol>
+  </nav>
+
+  <article class="content">
+    <section id="objet">
+      <h2>Objet</h2>
+      <p>La présente politique établit les conditions selon lesquelles les résidents d'ECTO peuvent louer une salle de la coopérative à tarif réduit. Elle précise qui peut obtenir le statut de résident, le tarif applicable et les frais connexes dont le résident doit être avisé avant sa location.</p>
+    </section>
+
+    <section id="resident">
+      <h2>Qui est résident</h2>
+      <p>Pour être considérée comme résidente, une personne doit remplir <strong>au moins une</strong> des trois conditions suivantes :</p>
+      <div class="grid-3">
+        <div class="card"><p class="stat">1</p><p>Être membre de la coopérative.</p></div>
+        <div class="card"><p class="stat">2</p><p>Être engagée dans un forfait mensuel d'une durée de 6 mois.</p></div>
+        <div class="card"><p class="stat">3</p><p>Être impliquée dans un comité ou une équipe d'ECTO, ou agir à titre de bénévole approuvé.</p></div>
+      </div>
+      <p>La personne doit de plus avoir démontré sa confiance envers la coopérative, soit par son implication, soit par la signature d'un contrat.</p>
+    </section>
+
+    <section id="tarif">
+      <h2>Tarif résident</h2>
+      <div class="card">
+        <p class="stat">−50 %</p>
+        <p class="stat-label">Le statut de résident donne droit à un rabais de 50 % sur le prix externe de la location. Le prix externe est celui en vigueur au moment de la réservation.</p>
+      </div>
+    </section>
+
+    <section id="frais">
+      <h2>Frais connexes de location</h2>
+      <p>Le résident est avisé, au moment de la réservation, que sa location comporte des frais connexes liés aux obligations suivantes :</p>
+      <ul>
+        <li>le nettoyage de l'espace;</li>
+        <li>la mise en place de la salle;</li>
+        <li>la remise de l'espace dans l'état dans lequel il l'a trouvé.</li>
+      </ul>
+    </section>
+
+    <section id="paiement">
+      <h2>Paiement des frais connexes</h2>
+      <p>Le résident choisit l'une des deux options suivantes :</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Option 1 · Paiement à l'avance</h3>
+          <p>Il acquitte les frais connexes au moment de la réservation.</p>
+        </div>
+        <div class="card">
+          <h3>Option 2 · Paiement après la location</h3>
+          <p>Il se charge lui-même des obligations prévues à la section précédente. S'il n'y donne pas suite malgré les demandes d'ECTO, les frais associés lui sont facturés après la location.</p>
+        </div>
+      </div>
+    </section>
+  </article>
+</div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>ECTO · Espace de travail coopératif</span>
+      <span><a href="https://www.ecto.coop">www.ecto.coop</a> · <a href="mailto:info@ecto.coop">info@ecto.coop</a></span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      btn.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
+</html>
