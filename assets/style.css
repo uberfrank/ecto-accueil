@@ -452,3 +452,81 @@ a.link.small:hover { background: var(--ecto-bleu-clair); border-color: var(--ect
 
 .links-foot { text-align: center; margin-top: 28px; font-size: 14px; color: var(--muted); }
 .links-foot a { color: var(--muted); }
+
+/* ---------- Codes QR (page de liens) ---------- */
+.qr-wrap { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.qr-wrap > .link { flex: 1; min-width: 0; }
+
+.qr-btn {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color .15s, color .15s;
+}
+.qr-btn:hover { border-color: var(--accent); color: var(--accent); }
+.qr-btn:focus-visible { outline: 2px solid var(--ecto-bleu-clair); outline-offset: 2px; }
+.qr-btn svg { width: 20px; height: 20px; }
+
+.link-pair-buttons .qr-btn { width: 36px; height: 36px; }
+.socials .qr-wrap { gap: 6px; }
+.socials .qr-btn { width: 32px; height: 32px; border-radius: 8px; }
+.socials .qr-btn svg { width: 16px; height: 16px; }
+
+.qr-dialog {
+  width: min(360px, calc(100vw - 32px));
+  padding: 28px 24px 22px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(15, 36, 36, .3);
+}
+.qr-dialog::backdrop { background: rgba(15, 36, 36, .55); }
+.qr-dialog h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  margin: 0 32px 16px;
+}
+.qr-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.qr-close:hover { background: var(--accent-soft); color: var(--ink); }
+.qr-close svg { width: 20px; height: 20px; }
+.qr-code {
+  display: block;
+  width: 240px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color .15s, transform .15s;
+}
+.qr-code:hover { border-color: var(--ecto-bleu-clair); transform: scale(1.02); }
+.qr-code:focus-visible { outline: 3px solid var(--ecto-bleu-clair); outline-offset: 3px; }
+.qr-code svg { display: block; width: 100%; height: auto; }
+.qr-hint { margin: 16px 0 4px; font-size: 14px; color: var(--muted); line-height: 1.45; }
+.qr-host { margin: 0; font-size: 13px; font-weight: 600; color: var(--accent); word-break: break-all; }
