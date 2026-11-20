@@ -380,7 +380,6 @@ a.link:hover { border-color: var(--accent); transform: translateY(-2px); }
   background: var(--bg);
 }
 
-.link[data-todo] { border-style: dashed; }
 
 .socials {
   list-style: none;

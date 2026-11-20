@@ -32,11 +32,3 @@ Pour GitHub Pages : *Settings → Pages → Deploy from a branch*, choisir la br
 Chaque page est un fichier HTML autonome. Le menu de navigation est répété dans chaque page :
 si vous ajoutez une page, ajoutez aussi son lien dans le `<nav>` de toutes les autres.
 
-## Liens à compléter
-
-Dans `index.html`, les liens marqués `data-todo` sont provisoires (bordure pointillée) :
-
-- `calendrier` : adresse de la page calendrier;
-- `archie-android` : pointe vers la page de téléchargement d'Archie en attendant le lien Google Play exact.
-
-Remplacez le `href` et retirez l'attribut `data-todo`.
