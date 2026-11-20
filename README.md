@@ -4,7 +4,8 @@ Site web statique (HTML + CSS, aucune dépendance de build) présentant les docu
 
 | Page | Source |
 | --- | --- |
-| `index.html` | Page d'accueil |
+| `index.html` | Page de liens (style « linktree ») vers les outils d'ECTO |
+| `documentation.html` | Accueil de la documentation |
 | `guide-accueil.html` | Guide de l'accueil – v2.2 |
 | `credits-benevolat.html` | Crédits bénévolat |
 | `devenir-membre.html` | Devenir membre (ébauche) |
@@ -30,3 +31,12 @@ Pour GitHub Pages : *Settings → Pages → Deploy from a branch*, choisir la br
 
 Chaque page est un fichier HTML autonome. Le menu de navigation est répété dans chaque page :
 si vous ajoutez une page, ajoutez aussi son lien dans le `<nav>` de toutes les autres.
+
+## Liens à compléter
+
+Dans `index.html`, les liens marqués `data-todo` sont provisoires (bordure pointillée) :
+
+- `calendrier` : adresse de la page calendrier;
+- `archie-android` : pointe vers la page de téléchargement d'Archie en attendant le lien Google Play exact.
+
+Remplacez le `href` et retirez l'attribut `data-todo`.

@@ -3,86 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ECTO — Guides et politiques</title>
-  <meta name="description" content="Guides et politiques d'ECTO, espace de travail coopératif : accueil, bénévolat, adhésion, location et événements.">
+  <title>ECTO — Liens</title>
+  <meta name="description" content="Tous les liens et outils d'ECTO, espace de travail coopératif : documentation, journée d'essai, événements, infolettre, communauté et application Archie.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <div class="site-header">
-    <div class="wrap">
-      <a class="logo" href="index.html" aria-label="ECTO — accueil"><img src="assets/logo-ecto.jpg" alt="ECTO — Espace de travail coopératif" width="145" height="34"></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-        <ul>
-          <li><a href="index.html" aria-current="page">Accueil</a></li>
-          <li><a href="guide-accueil.html">Guide de l'accueil</a></li>
-          <li><a href="credits-benevolat.html">Crédits bénévolat</a></li>
-          <li><a href="devenir-membre.html">Devenir membre</a></li>
-          <li><a href="location-residents.html">Location résidents</a></li>
-          <li><a href="evenements-communautaires.html">Événements</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+<body class="links-page">
+  <main class="links">
+    <header class="links-head">
+      <a class="logo" href="https://www.ecto.coop"><img src="assets/logo-ecto.jpg" alt="ECTO — Espace de travail coopératif" width="240" height="56"></a>
+      <p>Tous nos liens et outils</p>
+    </header>
 
-<header class="hero wrap">
-  <p class="eyebrow">Espace de travail coopératif</p>
-  <h1>Guides et politiques d'ECTO</h1>
-  <p class="lead">Tout ce qu'il faut savoir pour tenir l'accueil, contribuer comme bénévole, devenir membre, louer une salle ou organiser un événement communautaire.</p>
-</header>
+    <!--
+      LIENS À COMPLÉTER : les liens marqués data-todo pointent vers une adresse
+      provisoire. Remplacez le href puis retirez l'attribut data-todo.
+    -->
+    <ul class="link-list">
+      <li>
+        <a class="link featured" href="documentation.html">
+          <span class="link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H11v18H5.5A1.5 1.5 0 0 1 4 19.5z"/><path d="M20 4.5A1.5 1.5 0 0 0 18.5 3H13v18h5.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></span>
+          <span class="link-text"><strong>Documentation</strong><small>Guide de l'accueil, politiques et adhésion</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://ecto.coop/formulaire-journee-dessai/">
+          <span class="link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span>
+          <span class="link-text"><strong>Journée d'essai gratuite</strong><small>Venez essayer l'espace</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="#" data-todo="calendrier">
+          <span class="link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+          <span class="link-text"><strong>Calendrier</strong><small>Ce qui se passe à ECTO</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://www.eventbrite.com/o/6151391417">
+          <span class="link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a3 3 0 0 0 0 6v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a3 3 0 0 0 0-6z"/><path d="M14 5v14" stroke-dasharray="2 2"/></svg></span>
+          <span class="link-text"><strong>Événements sur Eventbrite</strong><small>Billets et inscriptions</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://e3d7c1e4.sibforms.com/serve/MUIFAJAG5EE2lT1XUOfnA7Y-F7MP-Ue1kdOl2y-wbZPjOSV842a4I2aOwoC9JZam9E_y4Mti7IxNF2loEcZUBUUZa3moMsscORwsuqZyE8rxF_5A2tyXwJjC9jMA3OerBjVu9YcwaXhH0WJNAM2rv34VUj2E6I-fhg6YZ34fAaItcW-xrMqCCnlB5K1BLeRKtgGb_yuN2qCaQsl6">
+          <span class="link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <span class="link-text"><strong>Infolettre</strong><small>Les nouvelles d'ECTO dans votre boîte courriel</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://chat.whatsapp.com/CeHUJinr5HvImSAa9Y9lNJ">
+          <span class="link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg></span>
+          <span class="link-text"><strong>Communauté WhatsApp</strong><small>Échangez avec les membres et habitué·es</small></span>
+        </a>
+      </li>
+      <li class="link-pair">
+        <div class="link-pair-head">
+          <span class="link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
+          <span class="link-text"><strong>Application Archie</strong><small>Réservations, forfaits et factures</small></span>
+        </div>
+        <div class="link-pair-buttons">
+          <a class="link small" href="https://archieapp.co/download" data-todo="archie-android">Android</a>
+          <a class="link small" href="https://apps.apple.com/app/id1516909512">iPhone</a>
+        </div>
+      </li>
+    </ul>
 
-<main class="wrap doc-grid">
-  <a class="doc-card" href="guide-accueil.html">
-    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg></span>
-    <h2>Guide de l'accueil</h2>
-    <p>Horaires, tâches à l'entrée et au téléphone, réservations de salles, fermeture et imprévus.</p>
-    <span class="go">Lire le guide →</span>
-  </a>
-  <a class="doc-card" href="credits-benevolat.html">
-    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2s1.3 1.7 3 2 3 .9 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5"/><path d="M12 6v2M12 16v2"/></svg></span>
-    <h2>Crédits bénévolat</h2>
-    <p>Comment le temps donné à l'accueil ou à la coordination se transforme en crédits sur votre compte.</p>
-    <span class="go">Voir les crédits →</span>
-  </a>
-  <a class="doc-card" href="devenir-membre.html">
-    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M19 8v6M16 11h6"/></svg></span>
-    <h2>Devenir membre</h2>
-    <p>Ce qu'être membre de la coopérative signifie, les contributions attendues et la procédure d'adhésion.</p>
-    <span class="go">Devenir membre →</span>
-  </a>
-  <a class="doc-card" href="location-residents.html">
-    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></span>
-    <h2>Location pour les résidents</h2>
-    <p>Qui a le statut de résident, le rabais de 50 % sur la location de salles et les frais connexes.</p>
-    <span class="go">Voir la politique →</span>
-  </a>
-  <a class="doc-card" href="evenements-communautaires.html">
-    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M9 15l2 2 4-4"/></svg></span>
-    <h2>Événements communautaires</h2>
-    <p>Admissibilité, réservation des espaces, partage des revenus et responsabilités de chacun.</p>
-    <span class="go">Voir la politique →</span>
-  </a>
-</main>
+    <ul class="socials" aria-label="Réseaux sociaux">
+      <li>
+        <a href="https://www.linkedin.com/company/coop-rative-ecto/" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.74 0-2 1.35-2 2.75V21h-4z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/ecto.coop" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.47A20 20 0 0 0 14.3 4.3c-2.25 0-3.8 1.37-3.8 3.9v2.3H8v3h2.5V21z"/></svg>
+        </a>
+      </li>
+    </ul>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>ECTO · Espace de travail coopératif</span>
-      <span><a href="https://www.ecto.coop">www.ecto.coop</a> · <a href="mailto:info@ecto.coop">info@ecto.coop</a></span>
-    </div>
-  </footer>
-
-  <script>
-    (function () {
-      var btn = document.querySelector('.nav-toggle');
-      var nav = document.getElementById('site-nav');
-      btn.addEventListener('click', function () {
-        var open = nav.classList.toggle('open');
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-    })();
-  </script>
+    <footer class="links-foot">
+      <a href="https://www.ecto.coop">www.ecto.coop</a> · <a href="mailto:info@ecto.coop">info@ecto.coop</a>
+    </footer>
+  </main>
 </body>
 </html>
