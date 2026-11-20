@@ -14,6 +14,16 @@ Site web statique (HTML + CSS, aucune dépendance de build) présentant les docu
 
 Styles partagés : `assets/style.css`. Logo : `assets/logo-ecto.jpg`.
 
+## Identité visuelle
+
+Reprise de www.ecto.coop :
+
+- Polices : **Sora** (Google Fonts) pour le texte, **Super Sunkissed** (`assets/fonts/`) pour les titres.
+  Super Sunkissed est une police commerciale utilisée sous la licence d'ECTO.
+- Couleurs (variables `--ecto-*` en haut de `assets/style.css`) :
+  bleu `#0000a3`, bleu clair `#3185fc`, corail `#ff755c`, menthe `#cbf3d2`,
+  sarcelle `#155b5a`, encre `#0f2424`, crème `#f7f2f2`.
+
 ## Voir le site
 
 Ouvrir `index.html` dans un navigateur, ou servir le dossier localement :
