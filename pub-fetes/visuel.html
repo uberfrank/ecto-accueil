@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Pub fêtes ECTO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+@font-face { font-family: "Super Sunkissed"; src: url("../assets/fonts/Super-Sunkissed.ttf"); }
+:root{ --bleu:#0000a3; --bleu-clair:#3185fc; --corail:#ff755c; --menthe:#cbf3d2; --sarcelle:#155b5a; --encre:#0f2424; --creme:#f7f2f2; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#888;font-family:"Sora",sans-serif;display:flex;flex-direction:column;gap:40px;padding:40px;align-items:flex-start}
+.ad{position:relative;overflow:hidden;background:var(--bleu);color:#fff}
+.logo{display:block;filter:invert(1);mix-blend-mode:screen}
+.deco{position:absolute;inset:0;pointer-events:none}
+.disp{font-family:"Super Sunkissed","Sora",sans-serif;font-weight:400;line-height:.92;letter-spacing:.5px}
+.hl-accent{color:var(--menthe)}
+.badge{background:var(--corail);color:var(--encre);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(-8deg)}
+.badge .pct{font-family:"Super Sunkissed","Sora",sans-serif;line-height:.85}
+.badge .sub{font-weight:700;line-height:1.15}
+.pill{display:inline-block;background:var(--menthe);color:var(--sarcelle);font-weight:800;border-radius:999px}
+.values{font-weight:600;color:#fff;opacity:.92}
+.cta{font-weight:700}
+.cta b{color:var(--menthe);font-weight:800}
+
+.content{position:absolute;display:flex;flex-direction:column;align-items:flex-start}
+.foot{position:absolute;display:flex;justify-content:space-between;align-items:baseline}
+sup{font-size:.6em;vertical-align:.45em;line-height:0}
+
+/* ===== Carré 1080 ===== */
+#carre{width:1080px;height:1080px}
+#carre .content{left:72px;top:68px;width:936px;bottom:150px}
+#carre .logo{width:330px;margin-bottom:auto}
+#carre h1{font-size:104px;width:640px;margin-bottom:34px}
+#carre .badge{position:absolute;right:66px;top:300px;width:280px;height:280px}
+#carre .badge .pct{font-size:116px}
+#carre .badge .sub{font-size:24px;margin-top:8px}
+#carre .values{font-size:32px;line-height:1.4;width:860px;margin-bottom:32px}
+#carre .pill{font-size:38px;padding:16px 34px}
+#carre .foot{left:72px;right:72px;bottom:68px}
+#carre .cta{font-size:34px}
+#carre .url{font-size:26px;font-weight:600;opacity:.8}
+
+/* ===== Paysage 1200x627 ===== */
+#paysage{width:1200px;height:627px}
+#paysage .content{left:64px;top:56px;width:780px;bottom:120px}
+#paysage .logo{width:250px;margin-bottom:auto}
+#paysage h1{font-size:74px;margin-bottom:20px}
+#paysage .badge{position:absolute;right:76px;top:120px;width:260px;height:260px}
+#paysage .badge .pct{font-size:106px}
+#paysage .badge .sub{font-size:22px;margin-top:8px}
+#paysage .values{font-size:24px;line-height:1.4;width:640px}
+#paysage h1 .hl-accent{display:block}
+#paysage .pill{position:absolute;right:60px;top:432px;font-size:27px;padding:13px 26px}
+#paysage .foot{left:64px;right:64px;bottom:50px}
+#paysage .cta{font-size:28px}
+#paysage .url{font-size:22px;font-weight:600;opacity:.8}
+</style>
+</head>
+<body>
+
+<!-- Confettis/étoiles réutilisables -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <path id="spark" d="M0,-1 C0.12,-0.12 0.12,-0.12 1,0 C0.12,0.12 0.12,0.12 0,1 C-0.12,0.12 -0.12,0.12 -1,0 C-0.12,-0.12 -0.12,-0.12 0,-1Z"/>
+  </defs>
+</svg>
+
+<div class="ad" id="carre">
+  <svg class="deco" viewBox="0 0 1080 1080">
+    <!-- guirlande lumineuse -->
+    <path d="M430,0 Q640,120 860,40 T1080,90" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/>
+    <g>
+      <circle cx="500" cy="42" r="11" fill="#ff755c"/><circle cx="580" cy="72" r="11" fill="#cbf3d2"/>
+      <circle cx="660" cy="86" r="11" fill="#3185fc"/><circle cx="740" cy="78" r="11" fill="#ff755c"/>
+      <circle cx="820" cy="56" r="11" fill="#cbf3d2"/><circle cx="905" cy="40" r="11" fill="#3185fc"/>
+      <circle cx="985" cy="56" r="11" fill="#ff755c"/><circle cx="1055" cy="82" r="11" fill="#cbf3d2"/>
+    </g>
+    <use href="#spark" transform="translate(940 610) scale(34)" fill="#cbf3d2"/>
+    <use href="#spark" transform="translate(1010 700) scale(18)" fill="#ff755c"/>
+    <use href="#spark" transform="translate(860 700) scale(14)" fill="#fff"/>
+    <use href="#spark" transform="translate(1000 870) scale(26)" fill="#3185fc"/>
+    <use href="#spark" transform="translate(420 175) scale(16)" fill="#fff" fill-opacity=".7"/>
+    <rect x="900" y="780" width="22" height="10" rx="3" fill="#ff755c" transform="rotate(30 911 785)"/>
+    <rect x="780" y="620" width="22" height="10" rx="3" fill="#cbf3d2" transform="rotate(-25 791 625)"/>
+    <circle cx="960" cy="790" r="7" fill="#fff" fill-opacity=".8"/>
+  </svg>
+  <div class="content">
+  <img class="logo" src="../assets/logo-ecto.jpg" alt="ECTO">
+  <h1 class="disp">Votre party de fin d’année, <span class="hl-accent">au cœur du Plateau</span></h1>
+  <p class="values">Louez chez ECTO et soutenez un espace coopératif, local et chaleureux. 💚</p>
+  <div class="pill">Du 1<sup>er</sup> au 23 décembre</div>
+  </div>
+  <div class="badge"><div class="pct">-20%</div><div class="sub">sur la location<br>de salle</div></div>
+  
+  <div class="foot"><p class="cta">Réservez : <b>info@ecto.coop</b></p><p class="url">ecto.coop</p></div>
+</div>
+
+<div class="ad" id="paysage">
+  <svg class="deco" viewBox="0 0 1200 627">
+    <path d="M360,0 Q560,90 780,30 T1200,60" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/>
+    <g>
+      <circle cx="420" cy="30" r="9" fill="#ff755c"/><circle cx="500" cy="56" r="9" fill="#cbf3d2"/>
+      <circle cx="580" cy="66" r="9" fill="#3185fc"/><circle cx="660" cy="58" r="9" fill="#ff755c"/>
+      <circle cx="740" cy="38" r="9" fill="#cbf3d2"/><circle cx="830" cy="32" r="9" fill="#3185fc"/>
+      <circle cx="920" cy="48" r="9" fill="#ff755c"/><circle cx="1010" cy="70" r="9" fill="#cbf3d2"/>
+      <circle cx="1100" cy="66" r="9" fill="#3185fc"/>
+    </g>
+    <use href="#spark" transform="translate(860 150) scale(24)" fill="#cbf3d2"/>
+    <use href="#spark" transform="translate(900 380) scale(14)" fill="#fff"/>
+    <use href="#spark" transform="translate(1150 400) scale(18)" fill="#ff755c"/>
+    <use href="#spark" transform="translate(830 330) scale(10)" fill="#3185fc"/>
+    <rect x="1110" y="140" width="20" height="9" rx="3" fill="#ff755c" transform="rotate(30 1120 144)"/>
+    <circle cx="880" cy="250" r="6" fill="#fff" fill-opacity=".8"/>
+  </svg>
+  <div class="content">
+  <img class="logo" src="../assets/logo-ecto.jpg" alt="ECTO">
+  <h1 class="disp">Votre party de fin d’année, <span class="hl-accent">au cœur du Plateau</span></h1>
+  <p class="values">Louez chez ECTO et soutenez un espace coopératif, local et chaleureux. 💚</p>
+  
+  </div>
+  <div class="badge"><div class="pct">-20%</div><div class="sub">sur la location<br>de salle</div></div>
+  <div class="pill">Du 1<sup>er</sup> au 23 décembre</div>
+  <div class="foot"><p class="cta">Réservez : <b>info@ecto.coop</b></p><p class="url">ecto.coop</p></div>
+</div>
+
+</body>
+</html>
